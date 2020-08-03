@@ -10,7 +10,7 @@ public class Account {
 	}
 	
 	public void withdraw(int a){//잔고를 주어진 출금액만큼 감소
-		if(a<balance)
+		if(balance<a)
 			System.out.println("현 잔고가 충분하지 않습니다.");
 		else
 			this.balance = balance-a;
@@ -19,7 +19,7 @@ public class Account {
 	@Override
 	public String toString() {
 		String resultString = "";
-		resultString = "예금주 이름: "+ownerName+getOwnerName()+"\n"+"계좌번호: "+getAccountNumber()+"\n"+"잔고: "+getBalance();
+		resultString = "예금주 이름: "+getOwnerName()+"\n"+"계좌번호: "+getAccountNumber()+"\n"+"잔고: "+getBalance();
 		return resultString;
 	}
 	
