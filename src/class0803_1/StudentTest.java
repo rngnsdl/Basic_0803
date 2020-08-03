@@ -30,12 +30,16 @@ public class StudentTest {
 			student[i].setName(name[i]);
 			student[i].setAssingmentScore(assing[i]);
 			student[i].setExamScore(exam[i]);
+			
+			// == student[1] = student1;
+			// == student[2] == student2;
 		}
 		
 			for(Student i: student) {
 				System.out.println(i.getName());
 				System.out.println(i.getAssingmentScore());
 				System.out.println(i.getExamScore());
+				// == System.out.println(i); == System.out.println(i.toString); -왜냐면 toString을 만들어 놨기 때문
 			}
 		}
 }
