@@ -16,10 +16,10 @@ public class PairOfDice {
 	}
 	
 	public int getFaceValue1() {
-		return this.getFaceValue1();
+		return this.faceValue1;
 	}
 	
 	public int getFaceValue2() {
-		return this.getFaceValue2();
+		return this.faceValue2;
 	}
 }
