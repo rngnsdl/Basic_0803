@@ -8,7 +8,7 @@ public class Driver {
 
 	public static void main(String[] args) {
 		
-		String flag = "예";
+		String answer = "예";
 		PairOfDice dice;
 		
 		Scanner input = new Scanner(System.in);
@@ -32,8 +32,8 @@ public class Driver {
 				System.out.println("비겼습니다.");
 			
 			System.out.println("\n게임을 계속하시겠습니까?(예 혹은 아니오):");
-			flag= input.next();
-		}while(flag.equals("예"));
+			answer= input.next();
+		}while(answer.equals("예"));
 		
 	}
 
